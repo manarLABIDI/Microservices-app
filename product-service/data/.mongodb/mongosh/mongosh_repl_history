@@ -1,0 +1,21 @@
+db.product.find().pretty()
+db.product.deleteMany({ _id: "109" })
+db.product.find().pretty()
+db.product.deleteMany({ _id: 109 })
+db.product.deleteMany({ _id: { $in: } })
+db.product.find().pretty()
+use product-service
+db.product.find().pretty()
+db.product.deleteMany({ _id: { $in: ["5", "8", "1869"] } })
+db.product.find().pretty()
+use product-service
+db.product.find().pretty()
+use product-service
+db.product.find().pretty()
+use product-service
+db.product.find().pretty()
+db.product.countDocuments()
+db.product.find().pretty()
+use product-service
+db.product.find().pretty()
+db.product.countDocuments()
