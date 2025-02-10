@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  mysql:
+    image: 'mysql:latest'
+    container_name: mysql_container
+    restart: always
+    environment:
+        MYSQL_DATABASE: 'order_service'
+        MYSQL_USER: 'user'
+        MYSQL_PASSWORD: 'pass'
+        MYSQL_ROOT_PASSWORD: 'pass'
+    ports:
+      - "3305:3306"
+
+    volumes:
+      - ./mysql:/var/lib/mysql

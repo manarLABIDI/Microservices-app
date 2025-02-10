@@ -19,3 +19,14 @@ db.product.find().pretty()
 use product-service
 db.product.find().pretty()
 db.product.countDocuments()
+db.product.count()
+show collections
+db.products.find().pretty()
+show collections
+use product-service
+show dbs
+exit
+db.products.find().pretty()
+db.getCollectionNames()
+use product-service
+show dbs
