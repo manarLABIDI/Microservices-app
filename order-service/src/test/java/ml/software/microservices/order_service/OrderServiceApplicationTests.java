@@ -1,5 +1,6 @@
 package ml.software.microservices.order_service;
 
+import ml.software.microservices.order_service.stubs.InventoryClientStub;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.Import;
@@ -16,6 +17,7 @@ import org.testcontainers.containers.MySQLContainer;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@AutoConfigureWireMock(port = 0)
 class OrderServiceApplicationTests {
 
 	@ServiceConnection
@@ -42,6 +44,7 @@ class OrderServiceApplicationTests {
                      "quantity": 1
                 }
                 """;
+		InventoryClientStub.stubInventoryCall("iphone_15", 1);
 
 		var responseBodyString = RestAssured.given()
 				.contentType("application/json")
@@ -54,6 +57,6 @@ class OrderServiceApplicationTests {
 				.extract()
 				.body().asString();
 
-		assertThat(responseBodyString, Matchers.is("Order Placed Successfully"));
+		assertThat(responseBodyString, Matchers.is("Order placed successfully"));
 	}
 }
