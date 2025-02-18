@@ -1,4 +1,4 @@
-package ml.software.microservices.order_service.exception;
+package ml.software.microservices.order_service.handler;
 
 public class ProductNotAvailableException extends RuntimeException {
 
