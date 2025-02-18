@@ -3,6 +3,7 @@ package ml.software.microservices.inventory.controller;
 import lombok.RequiredArgsConstructor;
 import ml.software.microservices.inventory.service.InventoryService;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -13,7 +14,7 @@ public class InventoryController {
 
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
-    public boolean isInStock(@RequestParam String skuCode, @RequestParam Integer quantity) {
-        return inventoryService.isInStock(skuCode, quantity);
+    public ResponseEntity<Boolean> isInStock(@RequestParam String skuCode, @RequestParam Integer quantity) {
+        return   ResponseEntity.ok(inventoryService.isInStock(skuCode, quantity));
     }
 }
