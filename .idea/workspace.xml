@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f28feae-62b3-4680-bf39-9576ba54a216" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/ml/software/microservices/order_service/proxy/InventoryProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/ml/software/microservices/order_service/proxy/InventoryProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-service/data/WiredTiger.turtle" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/data/WiredTiger.turtle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-service/data/WiredTiger.wt" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/data/WiredTiger.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/data/collection-4--3640248033986766319.wt" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/data/collection-4--3640248033986766319.wt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-service/data/diagnostic.data/metrics.interim" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/data/diagnostic.data/metrics.interim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/data/index-5--3640248033986766319.wt" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/data/index-5--3640248033986766319.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/data/index-6--3640248033986766319.wt" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/data/index-6--3640248033986766319.wt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-service/data/journal/WiredTigerLog.0000000009" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/data/journal/WiredTigerLog.0000000009" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/data/sizeStorer.wt" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/data/sizeStorer.wt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,12 +92,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ml.software.microservices.order_service.OrderServiceApplication" />
-      <module name="order-service" />
+    <configuration name="InventoryServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ml.software.microservices.inventory.InventoryServiceApplication" />
+      <module name="inventory-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ml.software.microservices.order_service.*" />
+          <option name="PATTERN" value="ml.software.microservices.inventory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,12 +105,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ml.software.microservices.product_service.ProductServiceApplication" />
-      <module name="product-service" />
+    <configuration name="OrderServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ml.software.microservices.order_service.OrderServiceApplication" />
+      <module name="order-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ml.software.microservices.product_service.*" />
+          <option name="PATTERN" value="ml.software.microservices.order_service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,10 +125,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.ApiGatewayApplication" />
-        <item itemvalue="Application.ProductServiceApplication" />
+        <item itemvalue="Application.OrderServiceApplication" />
+        <item itemvalue="Application.InventoryServiceApplication" />
         <item itemvalue="Application.EurekaServerApplication" />
         <item itemvalue="Application.ConfigServerApplication" />
-        <item itemvalue="Application.OrderServiceApplication" />
       </list>
     </recent_temporary>
   </component>
